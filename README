@@ -1,6 +1,6 @@
 # polytonic_to_monotonic.py
 
-This is a python program to convert a polytonic ancient greek document to monotonic
+This is a python program to convert a polytonic ancient Greek document to monotonic
 
 Usage: python ./polytonic_to_monotonic.py polytonic_file monotonic_file
 
