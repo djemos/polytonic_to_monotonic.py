@@ -2,9 +2,33 @@
 
 This is a python program to convert a polytonic ancient greek document to monotonic
 
-Usage: ./polytonic_to_monotonic.py polytonic_file monotonic_file
+Usage: python ./polytonic_to_monotonic.py polytonic_file monotonic_file
 
 Save your ancient greek polytonic text to a file e.g. polyt.txt then run
 
-python ./remove_accents.py polyt.txt mono.txt
+python ./polytonic_to_monotonic.py polyt.txt mono.txt
 The mono.txt will contain the monotonic file.
+
+==Ancient doc ==
+Ὦ κοινὸν αὐτάδελφον Ἰσμήνης κάρα,
+ἆρ᾿ οἶσθ᾿ ὅ τι Ζεὺς τῶν ἀπ᾿ Οἰδίπου κακῶν
+ὁποῖον οὐχὶ νῷν ἔτι ζώσαιν τελεῖ
+Οὐδὲν γὰρ οὔτ᾿ ἀλγεινὸν οὔτ᾿ ἄτης ἄτερ
+οὔτ᾿ αἰσχρὸν οὔτ᾿ ἄτιμόν ἐσθ᾿ ὁποῖον οὐ
+τῶν σῶν τε κἀμῶν οὐκ ὄπωπ᾿ ἐγὼ κακῶν.
+Καὶ νῦν τί τοῦτ᾿ αὖ φασι πανδήμῳ πόλει
+κήρυγμα θεῖναι τὸν στρατηγὸν ἀρτίως;
+Ἔχεις τι κεἰσήκουσας; ἤ σε λανθάνει
+πρὸς τοὺς φίλους στείχοντα τῶν ἐχθρῶν κακά;
+
+===mono.txt ===
+Ω κοινὸν αυτάδελφον Ισμήνης κάρα,
+αρ᾿ οισθ᾿ ό τι Ζεὺς τών απ᾿ Οιδίπου κακών
+οποιον ουχὶ νων έτι ζώσαιν τελει
+Ουδέν γὰρ ούτ᾿ αλγεινὸν ούτ᾿ άτης άτερ
+ούτ᾿ αισχρὸν ούτ᾿ άτιμόν εσθ᾿ οποιον ου
+τών σών τε καμών ουκ όπωπ᾿ εγὼ κακών.
+Καὶ νυν τί τουτ᾿ αυ φασι πανδήμω πόλει
+κήρυγμα θειναι τὸν στρατηγὸν αρτίως;
+Ἔχεις τι κεισήκουσας; ή σε λανθάνει
+πρὸς τοὺς φίλους στείχοντα τών εχθρών κακά;
