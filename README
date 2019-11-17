@@ -8,7 +8,7 @@ Save your ancient greek polytonic text to a file e.g. polyt.txt then run
 
 python ./polytonic_to_monotonic.py polyt.txt mono.txt
 
-The mono.txt will contain the monotonic file.
+The mono.txt file will contain the monotonic text.
 
 ==Ancient doc ==
 Ὦ κοινὸν αὐτάδελφον Ἰσμήνης κάρα,
