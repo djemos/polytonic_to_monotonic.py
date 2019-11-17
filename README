@@ -7,6 +7,7 @@ Usage: python ./polytonic_to_monotonic.py polytonic_file monotonic_file
 Save your ancient greek polytonic text to a file e.g. polyt.txt then run
 
 python ./polytonic_to_monotonic.py polyt.txt mono.txt
+
 The mono.txt will contain the monotonic file.
 
 ==Ancient doc ==
