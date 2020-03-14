@@ -163,7 +163,7 @@ MAP={'Ἄ': 'Ά',
 def help():
 	print('usage: python ./convert_polytonic_to_monotonic.sh polytonic_file monotonic_file')
 	text=str("Ὦ κοινὸν αὐτάδελφον Ἰσμήνης κάρα,")
-	print(convert_polytonic_to_monotonic(text))
+	print((convert_polytonic_to_monotonic(text)))
 	sys.exit(1)
     
 def convert_polytonic_to_monotonic(s):
@@ -177,15 +177,14 @@ def convert_polytonic_to_monotonic(s):
 
 
 def main(args):
-	coding1 = "utf-8"
 	try:
-		f= open(sys.argv[1], 'rb')
-		text= str(f.read(), coding1)
+		f = open(sys.argv[1], 'r')
+		text = str(f.read())
 		f.close()
 	except:
 		help()
 	try:
-		f= open(sys.argv[2], 'wb')
+		f = open(sys.argv[2], 'w')
 		f.write(convert_polytonic_to_monotonic(text))
 		f.close()
 	except:
