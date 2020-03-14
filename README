@@ -8,6 +8,9 @@ Save your ancient greek polytonic text to a file e.g. polyt.txt then run
 
 python ./polytonic_to_monotonic.py polyt.txt mono.txt
 
+if you have python3 also installed then run 
+python3 ./polytonic_to_monotonic.py polyt.txt mono.txt
+
 The mono.txt file will contain the monotonic text.
 
 ==Ancient doc ==
