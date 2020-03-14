@@ -20,11 +20,19 @@
 #  MA 02110-1301, USA.
 #  
 #  
-import sys 
-reload(sys) 
-sys.setdefaultencoding("utf-8")
-import re
-import unicodedata
+import sys
+python_version = sys.version_info.major
+if python_version == 3:
+	import importlib
+	importlib.reload(sys) 
+	import re
+	import unicodedata
+else:
+	reload(sys) 
+	sys.setdefaultencoding("utf-8")
+	import re
+	import unicodedata
+	str=unicode
 
 MAP={'Ἄ': 'Ά',
 'Ἀ': 'Α',
@@ -153,10 +161,10 @@ MAP={'Ἄ': 'Ά',
 }
 
 def help():
-    print('usage: python ./convert_polytonic_to_monotonic.sh polytonic_file monotonic_file')
-    text=unicode("Ὦ κοινὸν αὐτάδελφον Ἰσμήνης κάρα,")
-    print(convert_polytonic_to_monotonic(text))
-    sys.exit(1)
+	print('usage: python ./convert_polytonic_to_monotonic.sh polytonic_file monotonic_file')
+	text=str("Ὦ κοινὸν αὐτάδελφον Ἰσμήνης κάρα,")
+	print(convert_polytonic_to_monotonic(text))
+	sys.exit(1)
     
 def convert_polytonic_to_monotonic(s):
 	mono_str = []
@@ -172,7 +180,7 @@ def main(args):
 	coding1 = "utf-8"
 	try:
 		f= open(sys.argv[1], 'rb')
-		text= unicode(f.read(), coding1)
+		text= str(f.read(), coding1)
 		f.close()
 	except:
 		help()
